@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Invoices - Professional Web Development Services | Remote Consultant</title>
+      <meta name="description" content="Expert web development, SEO optimization, performance enhancement, and PHP/MySQL solutions. Professional remote consulting services">
+      <link rel="stylesheet" href="styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <script src="js-invoice-generator.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </head>
+<body>
+  
+<div id="invoice"></div>
+<button id="gen-invoice">Generate Invoice</button>
+
+<button id="download-pdf">Download PDF</button>
+
+  
+<script>
+    document.getElementById('gen-invoice').addEventListener('click', () => {
+      const invoice = new motion('#invoice', {
+        shop_name: 'My Shop',
+        logo: 'assets/logo.png',
+        email_address: 'hello@myshop.com',
+        phone_number: '+212 6 00 00 00 00',
+        footer_message: 'Thank you for your business!',
+        items: [
+          { name: 'Product A', qty: 2, price: 25.00 },
+          { name: 'Product B', qty: 1, price: 15.50 }
+        ],
+        taxes: [
+          { name: 'VAT', percent: 20 }
+        ],
+        charges: [
+          { name: 'Shipping', price: 5.00 }
+        ],
+        currency: 'MAD',
+        reference_no: 'INV-2025-001'
+      });
+      invoice.prepare();  // renders into #invoice
+    });
+    
+    document.getElementById('download-pdf').addEventListener('click', () => {
+      html2pdf().from(document.getElementById('invoice')).save('invoice.pdf');
+    });
+  </script>
+
+  </body>
+</html>
