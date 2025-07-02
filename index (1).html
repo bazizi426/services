@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Web Development Services | Remote Consultant</title>
+    <meta name="description" content="Expert web development, SEO optimization, performance enhancement, and PHP/MySQL solutions. Professional remote consulting services.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>DevConsult<span class="accent">Pro</span></h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#process" class="nav-link">Process</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Professional <span class="accent">Web Development</span><br>
+                    & Remote Consulting Services
+                </h1>
+                <p class="hero-description">
+                    Transform your digital presence with expert web development, SEO optimization, 
+                    performance enhancement, and technical consulting. Get professional solutions 
+                    delivered remotely with guaranteed results.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">View Services</a>
+                    <a href="#contact" class="btn btn-secondary">Get Quote</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/developer.jpg" alt="Professional Web Developer" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our <span class="accent">Services</span></h2>
+                <p class="section-description">
+                    Comprehensive web development and consulting solutions tailored to your business needs
+                </p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-service="Website Development">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <img src="images/web-development.jpg" alt="Website Development" class="service-image">
+                    <h3 class="service-title">Website Development</h3>
+                    <p class="service-description">
+                        Custom website development using modern technologies. Responsive, fast, and SEO-optimized websites that convert visitors into customers.
+                    </p>
+                    <ul class="service-features">
+                        <li>Responsive Design</li>
+                        <li>Modern Technologies</li>
+                        <li>SEO Optimized</li>
+                        <li>Fast Loading</li>
+                    </ul>
+                    <button class="btn btn-outline service-btn" data-service="Website Development">
+                        Select Service
+                    </button>
+                </div>
+
+                <div class="service-card" data-service="Remote Consulting">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <img src="images/remote-consulting.jpg" alt="Remote Consulting" class="service-image">
+                    <h3 class="service-title">Remote Consulting</h3>
+                    <p class="service-description">
+                        Expert technical consulting and guidance for your web projects. Get professional advice and solutions delivered remotely.
+                    </p>
+                    <ul class="service-features">
+                        <li>Technical Guidance</li>
+                        <li>Project Planning</li>
+                        <li>Code Review</li>
+                        <li>Best Practices</li>
+                    </ul>
+                    <button class="btn btn-outline service-btn" data-service="Remote Consulting">
+                        Select Service
+                    </button>
+                </div>
+
+                <div class="service-card" data-service="SEO Optimization">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <img src="images/seo-optimization.jpg" alt="SEO Optimization" class="service-image">
+                    <h3 class="service-title">SEO Optimization</h3>
+                    <p class="service-description">
+                        Improve your website's search engine rankings and organic traffic with comprehensive SEO optimization strategies.
+                    </p>
+                    <ul class="service-features">
+                        <li>Keyword Research</li>
+                        <li>On-Page SEO</li>
+                        <li>Technical SEO</li>
+                        <li>Performance Audit</li>
+                    </ul>
+                    <button class="btn btn-outline service-btn" data-service="SEO Optimization">
+                        Select Service
+                    </button>
+                </div>
+
+                <div class="service-card" data-service="Website Performance">
+                    <div class="service-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <img src="images/website-performance.jpg" alt="Website Performance" class="service-image">
+                    <h3 class="service-title">Performance Enhancement</h3>
+                    <p class="service-description">
+                        Boost your website's speed and performance with optimization techniques that improve user experience and search rankings.
+                    </p>
+                    <ul class="service-features">
+                        <li>Speed Optimization</li>
+                        <li>Image Compression</li>
+                        <li>Code Minification</li>
+                        <li>Caching Solutions</li>
+                    </ul>
+                    <button class="btn btn-outline service-btn" data-service="Website Performance">
+                        Select Service
+                    </button>
+                </div>
+
+                <div class="service-card" data-service="PHP & MySQL Fixing">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <img src="images/php-mysql.jpg" alt="PHP MySQL Development" class="service-image">
+                    <h3 class="service-title">PHP & MySQL Solutions</h3>
+                    <p class="service-description">
+                        Expert PHP development and MySQL database solutions. Bug fixes, optimization, and custom development for your web applications.
+                    </p>
+                    <ul class="service-features">
+                        <li>Bug Fixing</li>
+                        <li>Database Optimization</li>
+                        <li>Custom Development</li>
+                        <li>Security Enhancement</li>
+                    </ul>
+                    <button class="btn btn-outline service-btn" data-service="PHP & MySQL Fixing">
+                        Select Service
+                    </button>
+                </div>
+
+                <div class="service-card" data-service="Bug Fixing">
+                    <div class="service-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <img src="images/web-development.jpg" alt="Bug Fixing" class="service-image">
+                    <h3 class="service-title">Bug Fixing & Maintenance</h3>
+                    <p class="service-description">
+                        Quick and efficient bug fixes for your website or web application. Ongoing maintenance and support services available.
+                    </p>
+                    <ul class="service-features">
+                        <li>Quick Diagnosis</li>
+                        <li>Efficient Solutions</li>
+                        <li>Testing & QA</li>
+                        <li>Ongoing Support</li>
+                    </ul>
+                    <button class="btn btn-outline service-btn" data-service="Bug Fixing">
+                        Select Service
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Service <span class="accent">Pricing</span></h2>
+                <p class="section-description">
+                    Transparent pricing for professional web development services
+                </p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Website Development</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">299</span>
+                        <span class="period">Starting from</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Responsive Design</li>
+                        <li>Up to 5 Pages</li>
+                        <li>SEO Optimized</li>
+                        <li>Contact Forms</li>
+                        <li>1 Month Support</li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn" data-service="Website Development" data-price="$299">
+                        Get Started
+                    </button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h3 class="pricing-title">SEO Optimization</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">199</span>
+                        <span class="period">Starting from</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Complete SEO Audit</li>
+                        <li>Keyword Research</li>
+                        <li>On-Page Optimization</li>
+                        <li>Technical SEO</li>
+                        <li>Monthly Reports</li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn" data-service="SEO Optimization" data-price="$199">
+                        Get Started
+                    </button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Performance Enhancement</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">149</span>
+                        <span class="period">Starting from</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Speed Optimization</li>
+                        <li>Image Compression</li>
+                        <li>Code Minification</li>
+                        <li>Caching Setup</li>
+                        <li>Performance Report</li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn" data-service="Performance Enhancement" data-price="$149">
+                        Get Started
+                    </button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">PHP & MySQL Solutions</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">99</span>
+                        <span class="period">Per hour</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Bug Fixing</li>
+                        <li>Database Optimization</li>
+                        <li>Custom Development</li>
+                        <li>Security Enhancement</li>
+                        <li>Code Documentation</li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn" data-service="PHP & MySQL Solutions" data-price="$99/hour">
+                        Get Started
+                    </button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Remote Consulting</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">79</span>
+                        <span class="period">Per hour</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Technical Guidance</li>
+                        <li>Project Planning</li>
+                        <li>Code Review</li>
+                        <li>Best Practices</li>
+                        <li>Documentation</li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn" data-service="Remote Consulting" data-price="$79/hour">
+                        Get Started
+                    </button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Bug Fixing</h3>
+                    <div class="pricing-price">
+                        <span class="currency">$</span>
+                        <span class="amount">59</span>
+                        <span class="period">Starting from</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Quick Diagnosis</li>
+                        <li>Efficient Solutions</li>
+                        <li>Testing & QA</li>
+                        <li>Documentation</li>
+                        <li>Follow-up Support</li>
+                    </ul>
+                    <button class="btn btn-primary pricing-btn" data-service="Bug Fixing" data-price="$59">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How to <span class="accent">Order</span></h2>
+                <p class="section-description">
+                    Simple and straightforward process to get your project started
+                </p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Select Service</h3>
+                        <p class="step-description">
+                            Choose the service you need from our offerings above, or submit a custom request 
+                            through our contact form with your specific requirements.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Get Response</h3>
+                        <p class="step-description">
+                            We will respond to your request within 24 hours with a detailed proposal, 
+                            timeline, and secure payment link for your project.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Make Payment</h3>
+                        <p class="step-description">
+                            Complete the secure payment through our provided link. We accept all major 
+                            payment methods and provide invoices for your records.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Provide Access</h3>
+                        <p class="step-description">
+                            Once payment is confirmed, we'll request the necessary credentials and access 
+                            to begin working on your project immediately.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Project Delivery</h3>
+                        <p class="step-description">
+                            We'll keep you updated throughout the process and deliver your completed 
+                            project with documentation and ongoing support.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+                <p class="section-description">
+                    Ready to start your project? Send us a message and we'll get back to you within 24 hours.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>hello@devconsultpro.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Response Time</h4>
+                            <p>Within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Availability</h4>
+                            <p>Worldwide Remote Services</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="Website Development">Website Development</option>
+                            <option value="Remote Consulting">Remote Consulting</option>
+                            <option value="SEO Optimization">SEO Optimization</option>
+                            <option value="Website Performance">Performance Enhancement</option>
+                            <option value="PHP & MySQL Solutions">PHP & MySQL Solutions</option>
+                            <option value="Bug Fixing">Bug Fixing & Maintenance</option>
+                            <option value="Custom Request">Custom Request</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="Under $100">Under $100</option>
+                            <option value="$100 - $300">$100 - $300</option>
+                            <option value="$300 - $500">$300 - $500</option>
+                            <option value="$500 - $1000">$500 - $1000</option>
+                            <option value="$1000+">$1000+</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Please describe your project requirements, timeline, and any specific needs..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>DevConsult<span class="accent">Pro</span></h3>
+                    <p>Professional web development and consulting services delivered remotely worldwide.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Website Development</a></li>
+                        <li><a href="#services">SEO Optimization</a></li>
+                        <li><a href="#services">Performance Enhancement</a></li>
+                        <li><a href="#services">PHP & MySQL</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>hello@devconsultpro.com</p>
+                    <p>Available Worldwide</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DevConsultPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <i class="fas fa-check-circle"></i>
+                <h3>Message Sent Successfully!</h3>
+                <p>Thank you for your inquiry. We'll get back to you within 24 hours.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
