@@ -162,7 +162,7 @@ This message was sent from your freelance website contact form.
     `.trim();
     
     // Create mailto link (fallback method)
-    const mailtoLink = `mailto:hello@devconsultpro.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+    const mailtoLink = `mailto:bazizi426abdellatif@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
     
     // Simulate form submission (in a real scenario, you would use a backend service)
     setTimeout(() => {
